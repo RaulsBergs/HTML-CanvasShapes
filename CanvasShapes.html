@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+    p {
+      color: navy;
+      text-indent: 30px;
+      text-transform: uppercase;
+      }
+    h1 {
+      color: black;
+      text-indent: 30px;
+      font: 
+    }
+ #myCanvas {
+  border: solid black;
+ }
+  </style>
+  </head>
+      <canvas id="myCanvas" width="600" height="600" style="border:3px sol	id #000000;">
+      </canvas>
+  <script>
+		var canvas = document.getElementById("myCanvas");
+		var context = canvas.getContext("2d");
+    
+    //This is where im displaying my names for the shapes
+    context.font = "15px Times New Roman";
+    context.fillText("Circle Shape", 42, 20);
+    context.fillText("Rectangle Shape", 180, 20);
+    context.fillText("Triangle Shape", 332, 20);
+    context.fillText("Kite Shape", 495, 20);
+    context.fillText("Diamond Shape", 28, 190);
+    context.fillText("Pentagon Shape", 185, 190);
+    context.fillText("Semi Circle Shape", 344, 190);
+    context.fillText("Rhombus Shape", 480, 190);
+    context.fillText("Sextagon Shape", 28, 340);
+    context.fillText("Triangle Shape", 155, 340);
+    
+    //Circle
+    context.beginPath();
+		context.arc(80, 75, 50, 0, 2 * Math.PI);
+    context.fillStyle = "#FF7850";
+		context.fill();
+    
+    //Square
+    context.fillRect(180,30,100,100);
+    
+    //Kite
+    context.beginPath();
+    context.moveTo(530,30);
+    context.lineTo(480,60);
+    context.lineTo(530,132);
+    context.lineTo(580,60);
+		context.fill();
+    
+    //Triangle
+    context.beginPath();
+    context.moveTo(330,130);
+    context.lineTo(430,130);
+    context.lineTo(380,30);
+		context.fill();
+    
+    //Diamond
+    context.beginPath();
+    context.moveTo(50,200);
+    context.lineTo(100,200);
+    context.lineTo(130,230);
+    context.lineTo(70,300);
+    context.lineTo(20,230);
+		context.fill();
+    
+    //Pentagon
+    context.beginPath();
+    context.moveTo(230,200);
+    context.lineTo(290,230);
+    context.lineTo(260,300);
+    context.lineTo(200,300);
+    context.lineTo(170,230);
+		context.fill();
+    
+    //semi Circle
+    context.beginPath();
+    context.arc(400,230,50,0, Math.PI);
+    context.fill();
+	
+    //Rombus
+    context.beginPath();
+    context.moveTo(530,190);
+    context.lineTo(580,250);
+    context.lineTo(530,310);
+    context.lineTo(480,250);
+		context.fill();
+    
+    //Sextagon
+    context.beginPath();
+    context.moveTo(50,350);
+    context.lineTo(100,350);
+    context.lineTo(130,400);
+    context.lineTo(100,450);
+    context.lineTo(50,450);
+    context.lineTo(20,400);
+		context.fill();
+    
+    //Heart
+    context.beginPath();
+    context.moveTo(200, 380);
+    context.quadraticCurveTo(185 ,310, 150, 380);
+    context.moveTo(200, 380);
+    context.quadraticCurveTo(210 ,310, 250, 380);
+    context.moveTo(150,380);
+    context.lineTo(200,450);
+    context.lineTo(250,380);
+    context.fill();
+    
+  	</script>  
+  <body>
+
+  </body>
+  
+</html>
